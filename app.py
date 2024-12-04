@@ -52,7 +52,7 @@ def register():
     data = request.json
     username = data.get('username')
     password = data.get('password')
-    fullname = data.get('fullname')
+    fullname = data.get('fullName')
 
     if not username or not password or not fullname:
         return jsonify({"error": "Thiếu thông tin"}), 400
